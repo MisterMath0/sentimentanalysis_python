@@ -31,7 +31,7 @@ class SentimentAnalysisApp:
         return reviews_with_sentiment
 
 # Create an instance of SentimentAnalysisApp
-url = "https://uk.trustpilot.com/review/www.sinnersattire.com"  # Replace with actual review page URL
+url = "your-url-for-reviews-here"  # Replace with actual review page URL
 sentiment_app = SentimentAnalysisApp(url)
 
 # Define the endpoint to serve reviews
@@ -41,4 +41,4 @@ def get_reviews():
     return jsonify(reviews_data)  # Return the list of reviews as JSON
 
 if __name__ == "__main__":
-    app.run(debug=True, port=7000)
+    app.run(debug=True, port=8000)
