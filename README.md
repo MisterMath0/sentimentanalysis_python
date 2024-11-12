@@ -47,3 +47,8 @@ For deployment:
 1. Scraping New Websites: To scrape a different website, modify the Scraper class inside backend/services/scraper.py to handle the new website's HTML structure.
 2. Change Sentiment Model: If you want to change the sentiment analysis method, modify the SentimentAnalyzer class inside backend/services/sentiment_analyzer.py to use a different API or model.
 3. Styling the Frontend: You can customize the look and feel of the frontend by editing the components in frontend/components/Review.js and adjusting the CSS styles in frontend/styles.
+
+### Demo
+here is how it looks like with an Example from TrustPilot after complete configuration
+![image](https://github.com/user-attachments/assets/7ae655aa-5622-4379-b8e9-5494a1bf9ee4)
+
