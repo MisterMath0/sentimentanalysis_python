@@ -16,12 +16,12 @@ class Scraper:
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
             # This selector will need to be customized based on your target webpage structure
-            review_elements = soup.select('.styles_cardWrapper__LcCPA')  # Replace .review with actual HTML tag for reviews
+            review_elements = soup.select('.your-actual-html-tag-for-reviews')  # Replace .review with actual HTML tag for reviews(TIP: you can use chatGPT to analyse a page structure and give you this values as output
             
             for element in review_elements:
-                product_name = soup.select_one('h1.title_title__i9V__ span').text.strip() # Replace with actual class
-                review_text = element.select_one('.styles_reviewContent__0Q2Tg p').text  if element.select_one('.styles_reviewContent__0Q2Tg p') else "No review text available"  # Replace with actual class
-                reviewer = element.select_one('.link_internal__7XN06 link_wrapper__5ZJEx styles_consumerDetails__ZFieb span').text if element.select_one('.link_internal__7XN06 link_wrapper__5ZJEx styles_consumerDetails__ZFieb span') else "None"
+                product_name = soup.select_one('.your-actual-html-tag-for-product-name').text.strip() # Replace with actual class
+                review_text = element.select_one('.your-actual-html-tag-for-review-text').text  if element.select_one('.your-actual-html-tag-for-reviews-text') else "No review text available"  # Replace with actual class
+                reviewer = element.select_one('your-actual-html-tag-for-reviewer-name').text if element.select_one('your-actual-html-tag-for-reviewer-name') else "None"
                 
                 review = Review(product_name=product_name, review_text=review_text, reviewer=reviewer)
                 reviews.append(review)
