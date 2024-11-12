@@ -1,0 +1,37 @@
+/* app/components/ReviewCard.css */
+.review-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  max-width: 400px;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-name {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+.review-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.sentiment-rating {
+  color: #777;
+}

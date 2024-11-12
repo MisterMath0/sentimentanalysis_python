@@ -1,0 +1,20 @@
+# Python related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Virtual Environment
+venv/
+.env/
+
+# Dependency directories
+node_modules/
+frontend/.next/
+
+# Logs
+*.log
+
+# Credentials and sensitive data
+backend/credentials.json
