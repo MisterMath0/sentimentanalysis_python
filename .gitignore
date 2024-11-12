@@ -4,7 +4,7 @@ __pycache__/
 *.pyo
 *.pyd
 *.db
-
+*.env
 # Virtual Environment
 venv/
 .env/
